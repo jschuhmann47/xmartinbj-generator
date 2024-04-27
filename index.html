@@ -3,15 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js"></script>
     <title>Document</title>
 </head>
 <body>
-    
-    <form>
+   <h1>XMartinBJ Generator</h1> 
+    <form onsubmit="generar(document.getElementById('numeroMartin').value); return false;">
         <label for="numeroMartin">Cantidad:</label><br>
         <input type="number" id="numeroMartin" name="numeroMartin"><br>
         <input type="submit" value="Ejecutar">
     </form>
-    <p id="resultadoMartin"></p>
+    <br>
+    <div id="resultadoMartin"></div>
 </body>
 </html>
